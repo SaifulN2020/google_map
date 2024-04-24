@@ -35,14 +35,22 @@ class _GoogleMapApiState extends State<GoogleMapApi> {
         },
         polygons: {
           const Polygon(polygonId: PolygonId("My road"),
-          points: [
-              LatLng(24.258213792579546, 25.236462727189064),
-              LatLng(24.25386705814166, 25.235959477722645),
-              LatLng(24.25426566782533, 25.233727879822254),
-              LatLng(24.25849134272725, 25.23340802639723),
+
+              points: [
+            LatLng(29.177776305778682, 23.485178388655186),
+            LatLng(27.81555559487373, 25.75435470789671),
+            LatLng(27.695353113553033, 23.764830194413662),
 
           ]),
-
+        },
+        polylines: {
+          const Polyline(
+              polylineId: PolylineId("hello saiful"),
+              color: Colors.green,
+              points: [
+                LatLng(22.878703253751713, 24.8275076597929),
+                LatLng(23.7957375042351, 27.679958157241344)
+              ]),
         },
       ),
     );
